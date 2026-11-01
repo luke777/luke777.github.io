@@ -1,12 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Sans-Serif;
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 2.25rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #202020;
+  background: #fff;
+  overflow-wrap: break-word;
 }
 
-.icon{
-    height: 1em;
-    padding-right: 1em;
+h1, h2, h3 {
+  line-height: 1.25;
 }
 
-a {text-decoration: none; }
-a:hover {text-decoration: underline; }
+h1 {
+  margin: 0 0 1rem;
+}
+
+h2 {
+  margin: 1.75rem 0 0.75rem;
+}
+
+h3 {
+  margin: 1.25rem 0 0.75rem;
+}
+
+.portrait {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.contact-details {
+  font-style: normal;
+}
+
+.contact-details > div, .cv-link {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin: 0.2rem 0;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+}
+
+.publications, .link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.publications > li {
+  margin-bottom: 0.75rem;
+}
+
+.link-list > li {
+  margin-bottom: 0.35rem;
+}
+
+a {
+  color: #174c91;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+a:visited {
+  color: #65428a;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+.back-link {
+  margin-bottom: 1.5rem;
+}
+
+.route-map {
+  display: block;
+  width: 100%;
+  height: 500px;
+  border: 0;
+}
+
+@media (max-width: 40rem) {
+  body {
+    padding-top: 1.25rem;
+  }
+
+  .route-map {
+    height: 65vh;
+    min-height: 320px;
+    max-height: 500px;
+  }
+}
 

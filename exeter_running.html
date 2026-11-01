@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
         <title>Exeter running routes</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/svg+xml" href="favicon.svg">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div>Here is a map of running routes that I like around Exeter. 
-            There is a mix of paved paths and roads, and unpaved trails. I created it using the GPS data from some runs during lockdown.  I used 
-            <a href="https://umap.openstreetmap.fr/en/">UMap</a> to combine .gpx files with openstreetmap data.</div>
+        <nav class="back-link" aria-label="Home"><a href="index.html">← Luke Lindsay — home</a></nav>
+        <main>
+        <h1>Exeter running routes</h1>
+        <p>This map shows some of my favourite running routes around Exeter, including paved paths, roads, and unpaved trails. I created the map from GPS tracks recorded on my runs, using <a href="https://umap.openstreetmap.fr/en/">uMap</a> and OpenStreetMap data.</p>
         
-        <iframe width="100%" height="500px" frameborder="0" allowfullscreen src="https://umap.openstreetmap.fr/en/map/exeter-running-routes_536610?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"></iframe><p><a href="https://umap.openstreetmap.fr/en/map/exeter-running-routes_536610">See full screen</a>
+        <iframe class="route-map" title="Map of running routes around Exeter" allowfullscreen src="https://umap.openstreetmap.fr/en/map/exeter-running-routes_536610?scaleControl=false&amp;miniMap=false&amp;scrollWheelZoom=true&amp;zoomControl=true&amp;allowEdit=false&amp;moreControl=true&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=true&amp;onLoadPanel=undefined&amp;captionBar=false"></iframe>
+        <p><a href="https://umap.openstreetmap.fr/en/map/exeter-running-routes_536610">Open the full-size running map</a></p>
+        </main>
     </body>
 </html>
